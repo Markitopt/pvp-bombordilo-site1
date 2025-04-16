@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PvP Bombordilo Krokodilo</title>
+  <link rel="icon" type="image/png" href="favicon.png">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #111;
+      color: #fff;
+    }
+    header {
+      background: #222;
+      padding: 20px;
+      text-align: center;
+    }
+    h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      background: #1a1a1a;
+      padding: 10px;
+    }
+    nav a {
+      color: #0ff;
+      text-decoration: none;
+    }
+    section {
+      padding: 30px;
+      max-width: 900px;
+      margin: auto;
+    }
+  
+@keyframes logo-fade {
+  0% { transform: scale(0.95); opacity: 0.7; }
+  50% { transform: scale(1.05); opacity: 1; }
+  100% { transform: scale(1); opacity: 0.85; }
+}
+
+header img {
+  animation: logo-fade 3s infinite ease-in-out;
+}
+
+nav a {
+  padding: 10px 20px;
+  background: linear-gradient(to right, #00f2ff, #0ff);
+  border-radius: 30px;
+  color: #000 !important;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+nav a:hover {
+  background: linear-gradient(to right, #0ff, #00f2ff);
+  transform: scale(1.05);
+}
+
+
+body {
+  background: url('https://i.imgur.com/OiVtF3B.gif') no-repeat center center fixed;
+  background-size: cover;
+  transition: background 1s ease-in-out;
+}
+
+.page-transition {
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+</style>
+</head>
+<body class="page-transition">
+  <header>
+    <img src="logo.png" alt="PvP Logo" style="max-height: 100px;">
+    <h1>PvP Bombordilo Krokodilo</h1>
+  </header>
+  <nav>
+    <a href="index.html">Главная</a>
+    <a href="about.html">О сервере</a>
+    <a href="leaders.html">Лидеры</a>
+    <a href="contact.html">Контакты</a>
+  </nav>
+  
+  <section>
+    <h2>Добро пожаловать на PvP Bombordilo Krokodilo</h2>
+    <p>Стань лучшим на нашем сервере, участвуй в дуэлях 1v1 и 2v2!</p>
+  </section>
+</body>
+</html>
